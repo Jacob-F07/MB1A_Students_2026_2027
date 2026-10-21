@@ -1,0 +1,14 @@
+---
+title: "Assessment of regionally elevated genes in the Brain"
+author: "Jacob Flewitt"
+---
+Data was collected on the number of genes that appeared regionally elevated in the brains of humans, rats and pigs. I wish to calculate the number of genes which are regionally elevated in the forebrain of humans, rats and pigs.
+```{r}
+sum_in_humans <- (180 + 83 + 57 + 110)
+sum_in_rats <- (55 + 185 + 60 + 98)
+sum_in_pigs <- (109 + 157 + 31 + 45)
+print (sum_in_humans)
+print (sum_in_rats)
+print (sum_in_pigs)
+```
+Humans had the highest number of genes with regionally elevated expression, with 430. This is in comparison to rats with 398 and pigs with 342
