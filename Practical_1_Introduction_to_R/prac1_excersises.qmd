@@ -1,0 +1,33 @@
+---
+title: "Prac1_excersises"
+author: "Jacob Flewitt"
+---
+
+```{r}
+round(3.14159)
+print(seq(17,98,6))
+print(rep(5,7))
+x <- 55
+y <- "hello"
+z <- TRUE
+print (x)
+print (class(x))
+print (y)
+print (class(y))
+print(z)
+print(class(z))
+```
+```{r}
+cell_ID1 <- "CX1"
+cell_ID2 <- "CX2"
+cell1_treatment <- TRUE
+cell2_treatment <- FALSE
+num_cell1_before <- 5415
+num_cell2_before <- 8123
+num_cell1_after <-1432
+num_cell2_after <- 7543
+```
+```{r}
+sqrt (90)
+```
+
