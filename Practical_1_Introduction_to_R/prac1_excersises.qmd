@@ -4,18 +4,20 @@ author: "Jacob Flewitt"
 ---
 
 ```{r}
-round(3.14159)
-print(seq(17,98,6))
-print(rep(5,7))
-x <- 55
-y <- "hello"
-z <- TRUE
-print (x)
-print (class(x))
-print (y)
-print (class(y))
-print(z)
-print(class(z))
+library(tidyverse)
+library(gt)
+#round(3.14159)
+#print(seq(17,98,6))
+#print(rep(5,7))
+#x <- 55
+#y <- "hello"
+#z <- TRUE
+#print (x)
+#print (class(x))
+#print (y)
+#print (class(y))
+#print(z)
+#print(class(z))
 ```
 ```{r}
 cell_ID1 <- "CX1"
@@ -26,8 +28,29 @@ num_cell1_before <- 5415
 num_cell2_before <- 8123
 num_cell1_after <-1432
 num_cell2_after <- 7543
+ID_vec <- c("CX1", "CX2")
+cell_treatment <- c(TRUE, FALSE)
+num_cell_before <- c(5415, 8123)
+num_cell_after <- c(1432, 7543)
+
+all_my_pets <- c("Dog", "Cat", "Horse", "Chicken", "Guinea Pig")
+my_favourite_pet <- all_my_pets[4]
+print (my_favourite_pet)
+
+my_data_frame <- tibble(
+  CellID = ID_vec,
+  Treated = cell_treatment,
+  num_cells_before = num_cell_before,
+  num_cells_after = num_cell_after
+)
+
+gt(my_data_frame)
+
+weather <- read_csv("data/weather_data.csv")
+gt(weather)
+```
 ```
 ```{r}
-sqrt (90)
+
 ```
 

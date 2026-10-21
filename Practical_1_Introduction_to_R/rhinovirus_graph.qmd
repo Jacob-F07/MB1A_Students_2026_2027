@@ -1,0 +1,17 @@
+---
+title: "uksha-chart-download-rhinovirus"
+author: "Jacob Flewitt"
+---
+```{r}
+library(tidyverse)
+library(gt)
+rhinovirus <- read_csv("data/ukhsa-chart-download-rhinovirus.csv")
+
+gt(head(rhinovirus))
+weather <- read_csv("data/weather_data.csv")
+ggplot(weather,aes
+       x = observation_time,
+       y = temperature_c
+       )
+```
+
